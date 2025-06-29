@@ -5,6 +5,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 from dotenv import load_dotenv
 
 load_dotenv()
+print(f"token: {TOKEN}")
 TOKEN = os.getenv("TOKEN")
 
 if not TOKEN:
