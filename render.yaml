@@ -1,5 +1,8 @@
-runtime: python
-pythonVersion: "3.11"
-
-buildCommand: "pip install -r requirements.txt"
-startCommand: "python main.py"
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    pythonVersion: 3.11
